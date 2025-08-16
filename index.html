@@ -13,18 +13,107 @@
 </head>
 <body>
     <!-- main header -->
-    <header>
+    <header class="flex items-center justify-between p-4 bg-white shadow-md">
+    <!-- logo icon -->
+    <div class="bg-gray-200 rounded-full h-[75px] w-[75px] main-logo"></div>
 
+    <!-- navbar -->
+     <nav>
+        <ul class="flex space-x-2">
+            <li><a href="#home-page" class="text-gray-600 border py-[4px] px-[10px] rounded-[10px] hover:underline">Home</a></li>
+            <li><a href="#our-profile" class="text-gray-600 border py-[4px] px-[10px] rounded-[10px] hover:underline">Our Profile</a></li>
+            <li><a href="#portfolio" class="text-gray-600 border py-[4px] px-[10px] rounded-[10px] hover:underline">Portfolio</a></li>
+            <li><a href="#message" class="text-gray-600 border py-[4px] px-[10px] rounded-[10px] hover:underline">Message Us</a></li>
+        </ul>
+     </nav>
     </header>
+
 
     <!-- main content -->
     <main>
 
+    <!-- home section -->
+    <section id="home-page" class="h-[500px] bg-gray-100">
+        <div class="flex items-center justify-center h-full">
+            <h1 class="text-4xl font-bold text-gray-800"> Hello <span id="user-greeting">User</span>, Welcome to Dinamika Rekayasa Utama</h1>
+        </div>
+    </section>
+
+    <hr>
+
+    <!-- our profile -->
+    <section id="our-profile" class="h-[500px] bg-gray-100">
+        <header>
+        <h2 class="text-center text-3xl font-semibold text-gray-800">About Us</h2>
+        </header>
+
+        <br>
+        
+        <p>
+            Dinamika Rekayasa Utama is a leading engineering company specializing in innovative solutions for various industries. Our mission is to deliver high-quality services and products that meet the needs of our clients while adhering to the highest standards of safety and sustainability.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- portfolio -->
+    <section id="portfolio" class="h-[500px] bg-gray-100">
+        <header>
+        <h2 class="text-center text-3xl font-semibold text-gray-800">Portfolio</h2>
+        </header>
+        
+        <br>
+        
+        <p>
+            Our portfolio showcases a diverse range of projects that highlight our expertise in engineering and design. From infrastructure development to advanced technology solutions, we take pride in our ability to deliver exceptional results that exceed client expectations.
+        </p>
+    </section>
+
+    <hr>
+
+    <!-- message us -->
+    <section id="message" class="h-[500px] bg-gray-100">
+        <header>
+        <h2 class="text-3xl font-semibold text-gray-800">Message Us</h2>
+        </header>
+        
+        <br>
+        
+        <p>
+            If you have any questions or would like to discuss a project, please feel free to reach out to us. We are here to assist you and provide the best solutions for your engineering needs. Contact us via email or phone, and we will get back to you as soon as possible.
+        </p>
+
+        <form action="">
+            <label for="name" class="block text-gray-700">Name:</label>
+            <input type="text" id="name" name="name" class="border rounded w-full py-2 px-3 mb-4">
+
+            <label for="email" class="block text-gray-700">Email:</label>
+            <input type="email" id="email" name="email" class="border rounded w-full py-2 px-3 mb-4">
+
+            <label for="message" class="block text-gray-700">Message:</label>
+            <textarea id="user-message" name="message" rows="4" class="border rounded w-full py-2 px-3 mb-4"></textarea>
+
+            <button type="button" onclick="sendMessage();" class="bg-blue-500 text-white py-2 px-4 rounded hover:bg-blue-600">Send Message</button>
+        </form>
+    </section>
     </main>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
     <!-- footer -->
     <footer>
-
+        <span class="text-center text-gray-500">
+            <p>© 2025 Dinamika Rekayasa Utama. All rights reserved.</p>
+        </span>
     </footer>
 
     <!-- JSS External, script -->
